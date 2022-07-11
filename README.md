@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+To access the public url visit https://chrishelm82.github.io/nology-test
+
 ## Available Scripts
 
 In the project directory, you can run:
