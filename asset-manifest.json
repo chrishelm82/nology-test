@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nology.test/static/css/main.eeb66a60.css",
-    "main.js": "/nology.test/static/js/main.05dab965.js",
-    "static/media/pokemon.jpg": "/nology.test/static/media/pokemon.e2f08b744164a7692ed8.jpg",
-    "index.html": "/nology.test/index.html",
-    "main.eeb66a60.css.map": "/nology.test/static/css/main.eeb66a60.css.map",
-    "main.05dab965.js.map": "/nology.test/static/js/main.05dab965.js.map"
+    "main.css": "/nology-test/static/css/main.df0458d5.css",
+    "main.js": "/nology-test/static/js/main.05dab965.js",
+    "static/media/pokemon.jpg": "/nology-test/static/media/pokemon.e2f08b744164a7692ed8.jpg",
+    "index.html": "/nology-test/index.html",
+    "main.df0458d5.css.map": "/nology-test/static/css/main.df0458d5.css.map",
+    "main.05dab965.js.map": "/nology-test/static/js/main.05dab965.js.map"
   },
   "entrypoints": [
-    "static/css/main.eeb66a60.css",
+    "static/css/main.df0458d5.css",
     "static/js/main.05dab965.js"
   ]
 }
