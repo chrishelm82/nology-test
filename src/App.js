@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  const [pokemons, setPokemons] = useState([]);
+
+  // By changing the url limit number, you can change the pokemons that are displayed. Bulbasaur is the first pokemon in the list.
+  const getPokemon = () => {
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://pokeapi.co/api/v2/pokemon?limit=150"
+      );
+      const data = await response.json();
+      console.log(data);
+      setPokemons(data.results);
+    };
+    fetchData();
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1 className="text">Find your Pokemon</h1>
+        <button className="button" onClick={getPokemon}>
+          Get Pokemon
+        </button>
+      </div>
+      <ol className="ol">
+        {pokemons.map(({ name, url }) => (
+          <li className="li" key={url}>
+            {name}
+          </li>
+        ))}
+      </ol>
     </div>
   );
 }
